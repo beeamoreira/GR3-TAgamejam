@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfiydcrn21vy5"]
+
+[ext_resource type="Texture2D" uid="uid://cfe1sq1txqbqp" path="res://Art/bg.png" id="1_2bc1g"]
+[ext_resource type="Texture2D" uid="uid://cl8d2m2i4npmy" path="res://Art/p1.png" id="2_fjawp"]
+[ext_resource type="Texture2D" uid="uid://dbvj0fwdinacu" path="res://Art/p2.png" id="3_ipmag"]
+[ext_resource type="Texture2D" uid="uid://bvw2c5734pm4p" path="res://Art/p3.png" id="4_bhsee"]
+
+[node name="IntroScene" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="cennario" type="Sprite2D" parent="Background"]
+position = Vector2(959, 539)
+texture = ExtResource("1_2bc1g")
+
+[node name="npc" type="Node2D" parent="."]
+
+[node name="npc1" type="Sprite2D" parent="npc"]
+position = Vector2(211, 896)
+texture = ExtResource("2_fjawp")
+
+[node name="npc" type="Sprite2D" parent="npc"]
+position = Vector2(1488, 917)
+texture = ExtResource("3_ipmag")
+
+[node name="npc2" type="Sprite2D" parent="npc"]
+position = Vector2(1760, 902)
+texture = ExtResource("4_bhsee")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ui" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
