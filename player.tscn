@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsa4itk000a8m"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_2w48o"]
+[ext_resource type="Texture2D" uid="uid://bjwb8nm4vf4ar" path="res://Art/nado1.png" id="1_6bvjw"]
+[ext_resource type="Texture2D" uid="uid://xkj3wsic1hpa" path="res://Art/nado2.png" id="2_j61mj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p8cup"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6bvjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_j61mj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jlebs"]
+radius = 236.292
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_2w48o")
+
+[node name="player" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p8cup")
+autoplay = "default"
+frame_progress = 0.795495
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18, -4)
+scale = Vector2(0.799999, 0.68)
+shape = SubResource("CircleShape2D_jlebs")
