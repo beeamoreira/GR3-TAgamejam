@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://dj2bqhgeul5je"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klklm"]
+bg_color = Color(0.831373, 0.458824, 0.866667, 0.4)
+
+[sub_resource type="FontFile" id="FontFile_bovxt"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontVariation" id="FontVariation_vxhot"]
+
+[resource]
+default_font = SubResource("FontVariation_vxhot")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 28
+Panel/styles/panel = SubResource("StyleBoxFlat_klklm")
+RichTextLabel/colors/default_color = Color(0.15967, 0.15967, 0.15967, 1)
+RichTextLabel/font_sizes/normal_font_size = 30
+RichTextLabel/fonts/bold_font = SubResource("FontFile_bovxt")

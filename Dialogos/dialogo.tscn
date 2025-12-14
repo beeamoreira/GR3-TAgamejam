@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0o0t3pxtxh8h"]
+
+[ext_resource type="Script" path="res://Dialogos/dialogo.gd" id="1_55d3m"]
+[ext_resource type="Texture2D" uid="uid://52ja646kb4m6" path="res://Art/dialogo.png" id="1_d68en"]
+[ext_resource type="Texture2D" uid="uid://bndeex4664dae" path="res://Art/botaoplay.png" id="2_88p63"]
+[ext_resource type="Theme" uid="uid://dj2bqhgeul5je" path="res://Scenes/tema_telainicial.tres" id="3_o7lyn"]
+
+[node name="Dialogo" type="CanvasLayer"]
+script = ExtResource("1_55d3m")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.807
+anchor_right = 0.45
+anchor_bottom = 0.807
+offset_left = -408.0
+offset_top = -159.56
+offset_right = 408.0
+offset_bottom = 160.44
+texture = ExtResource("1_d68en")
+
+[node name="TextureButton" type="TextureButton" parent="NinePatchRect"]
+layout_mode = 2
+offset_left = 768.0
+offset_top = 256.0
+offset_right = 802.0
+offset_bottom = 304.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("2_88p63")
+
+[node name="Chat" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 2
+offset_left = 56.0
+offset_top = 40.0
+offset_right = 752.0
+offset_bottom = 302.0
+theme = ExtResource("3_o7lyn")
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit et lectus vel faucibus. Integer nec euismod nunc. In hac habitasse platea dictumst. Cras posuere lacinia orci sed rhoncus.
+
+"
